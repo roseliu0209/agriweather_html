@@ -199,12 +199,14 @@ a:focus,a:hover{ text-decoration: none;color:#007e91;}
 	position: relative;
 	justify-content: center;
 	align-items: center;
-	min-height: 35vh;
+	height: 35vh;
+	max-height: 380px;
 	background-size: cover;
 	background-position: center center;
 }
 .banner-title.index{
-	min-height: 50vh;
+	height: 50vh;
+	max-height: 500px;
 }
 .banner-title:after{
 	content:'';
@@ -221,10 +223,12 @@ a:focus,a:hover{ text-decoration: none;color:#007e91;}
 }
 @media (min-width: 992px) {
 	.banner-title{
-		min-height: 42vh;
+		height: 42vh;
+		max-height: 380px;
 	}
 	.banner-title.index{
-		min-height: 85vh;
+		height: 85vh;
+		max-height: 600px;
 	}
 	.banner-title:after{
 		width: 261px;
