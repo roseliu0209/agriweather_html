@@ -169,6 +169,7 @@ a:focus,a:hover{ text-decoration: none;color:#007e91;}
 	left: 0;
 	top: 0;
 	z-index: 500;
+	box-shadow: 0 0 3px rgba(0,0,0,.2);
 }
 
 .header .navbar{
@@ -180,11 +181,15 @@ a:focus,a:hover{ text-decoration: none;color:#007e91;}
 	font-weight: 400;
 	transition:  .3s .03s;
 }
+.header .navbar-nav .nav-link.active{
+	color: #1f7b78;
+}
 .header .navbar-nav .nav-link:hover{
 	color:#59b6a4;
 }
 .header .navbar-brand img{
 	max-width: 100%;
+	max-height: 50px;
 }
 @media (min-width: 992px) {
 	.header .navbar{
@@ -1012,7 +1017,8 @@ a:focus,a:hover{ text-decoration: none;color:#007e91;}
 	padding:1rem;
 }
 .members-list .member-item .member-block .member-photo>img{
-	width: 100%;
+	max-width: 100%;
+	width: 150px;
 	margin-bottom: 1rem;
 }
 .members-list .member-item .member-block .member-name>strong{
