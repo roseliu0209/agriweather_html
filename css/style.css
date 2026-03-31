@@ -1157,20 +1157,233 @@ a:focus,a:hover{ text-decoration: none;color:#007e91;}
 
 
 
+/* article ======================================================== */
+.articleTitle{
+	width: 100%;
+	display: block;
+	line-height: 2.4rem;
+	margin-bottom: 1rem;
+}
+.articleTitle2{
+	color: #84909c;
+	margin-bottom: 1rem;
+}
+.articleInfo{
+	width: 100%;
+	/* display: flex; */
+	justify-content: space-between;
+}
+.articleInfo .articleDate{
+	color: #222b4c;
+	font-weight: 400;
+	margin-bottom: 1rem;
+}
+.articleInfo .shareBTN{
+	font-size: 1.5rem;
+	display: inline-block;
+	margin: 0 .25rem;
+	color: #84909c;
+	transition: .3s .03s;
+}
+.articleInfo .shareBTN:focus,
+.articleInfo .shareBTN:hover{
+	color: #00e5b9;
+}
+.articleInfo .articleBackBtn{
+	color: #00e5b9;
+	display: inline-block;
+	text-decoration: none;
+	transition: .3s .03s;
+}
+.articleInfo .articleBackBtn:focus,
+.articleInfo .articleBackBtn:hover{
+	color: #001769;
+}
+@media (min-width: 992px) {
+	.articleTitle{
+		line-height: 3.2rem;
+	}
+	.articleTitle2{
+		margin-bottom: 3rem;
+	}
+}
 
 
 
+/* 文章內容 */
+.articleContent img{
+	width: 100%;
+	display: block;
+	margin-bottom: .5rem;
+}
+.articleContent img+small{
+	display: block;
+	text-align: center;
+}
+/* .articleImgBig{
+	width: 100%;
+	display: block;
+	position: relative;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+.articleImgBig>img{
+	width: 100%;
+	display: block;
+	margin-bottom: .5rem;
+} */
+
+.articleTable{
+	width: 100%;
+}
+.articleTable ul>li{
+	width: 100%;
+	margin-bottom: .5rem;
+}
+.articleTable ul>li>a{
+	display: inline-block;
+	transition: .3s .03s;
+}
+
+.articleHashtag .article-keywords-list{
+	width: 100%;
+	display: block;
+  margin-bottom: .5rem;
+	color:#59b6a4;
+}
+.articleHashtag .article-keywords-list>a{
+	text-decoration: none;
+	font-size: .875rem;
+	color:#59b6a4;
+	transition: .3s .03s;
+}
+.articleHashtag .article-keywords-list>a:before{
+	content: '#';
+}
+.articleHashtag .article-keywords-list>a:hover{
+	color:#00e5b9;
+}
 
 
-
-
-
-
-
-
-
-
-
+.article-list{
+	width: 100%;
+	display: block;
+	position: relative;	
+	margin-bottom: 1.5rem;
+}
+.article-item{
+	width: 100%;
+	display: block;
+	border-bottom: 1px solid #efefef;
+	padding: 1.5rem;
+}
+.article-item .article-img{
+	width: 100%;
+	padding-bottom: 70%;
+	overflow: hidden;
+	position: relative;
+}
+.article-item .article-img>span{
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	left: 0;right: 0;top: 0;bottom: 0;
+	margin:auto;
+	background-size: cover;
+	background-position: center center;
+	transition: .3s .03s;
+	background-repeat: no-repeat;
+}
+.article-item:hover .article-img>span{
+	transform: scale(1.1);
+}
+.article-item .article-title{
+	width: 100%;
+	display: block;
+	text-decoration: none;
+	font-size: 1.125rem;
+	font-weight: bold;
+  transition: .3s .03s;
+  margin: .5rem 0;
+}
+.article-item .article-text{
+	width: 100%;
+}
+.article-item .product-type-list{
+	width: 100%;
+	display: block;
+	position: relative;
+	margin:.5rem 0;
+}
+.article-item .product-type-list>a.btn{
+	display: inline-block;
+	color:#007e91;
+	border-color: #007e91;
+	margin-bottom: .2rem;
+}
+.article-item .product-type-list>a.btn:hover{
+	color:#ffffff;
+	background-color: #007e91;
+}
+.article-item .btn-readMore{
+	text-align: right;
+	text-decoration: none;
+	display: inline-block;
+	color:#00e5b9;
+	transition: .3s .03s;
+}
+.article-item .btn-readMore:hover{
+	color:#001769;
+	padding-right: 1rem;
+}
+.article-item .product-keywords-list{
+	width: 100%;
+	display: block;
+  margin-bottom: .5rem;
+	color:#59b6a4;
+}
+.article-item .product-keywords-list>a{
+	text-decoration: none;
+	font-size: .875rem;
+	color:#59b6a4;
+	transition: .3s .03s;
+}
+.article-item .product-keywords-list>a:before{
+	content: '#';
+}
+.article-item .product-keywords-list>a:hover{
+	color:#00e5b9;
+}
+@media (min-width: 768px) {
+	.article-item{
+		padding: 1.5rem 0;
+	}
+	.article-item .article-title{
+	  overflow: hidden;
+	  text-overflow: ellipsis;
+	  white-space: nowrap;
+	  transition: .3s .03s;
+	  margin: .5rem 0;
+	}
+	.article-item .article-text{
+		height: 3rem;
+	  display: -webkit-box;
+	  -webkit-box-orient: vertical;
+	  -webkit-line-clamp: 2;
+	  overflow: hidden;
+	}
+	.article-item .product-keywords-list{
+		width: 100%;
+		height: 1.5rem;
+	  display: -webkit-box;
+	  -webkit-box-orient: vertical;
+	  -webkit-line-clamp: 1;
+	  overflow: hidden;
+	  margin-bottom: .5rem;
+		color:#59b6a4;
+	}
+}
 
 @media screen and (max-width:990px){
 
