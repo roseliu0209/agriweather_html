@@ -1279,7 +1279,7 @@ a:focus,a:hover{ text-decoration: none;color:#007e91;}
 }
 .article-item .article-img{
 	width: 100%;
-	padding-bottom: 70%;
+	padding-bottom: 65%;
 	overflow: hidden;
 	position: relative;
 }
